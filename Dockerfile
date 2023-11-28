@@ -21,10 +21,11 @@ RUN mvn package -Dmaven.test.skip=true
 
 ##🆁🆄🅽🅽🅸🅽🅶 🆃🅷🅴 🅰🅿🅿🅻🅲🅰🆃🅸🅾🅽
 # Define environment variable
+#this is the external port
 ENV PORT=8080
 
 # Expose the port
 EXPOSE ${PORT}
 
 #Run the progamme
-ENTRYPOINT SERVER_PORT=${PORT} java -jar target/day14-0.0.01-SNAPSHOT.jar
+ENTRYPOINT SERVER_PORT=${PORT} java -jar target/day14-0.0.1-SNAPSHOT.jar
